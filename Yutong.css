@@ -13,12 +13,22 @@ h1{
 .topnav {
   text-align: center;
   background-color: #34495e;
+  overflow: hidden;
+  /* float: left; */
   }
 
 .topnav a {
     color: white;
     padding: 30px;
 }
+
+.topnav a:hover {
+    background-color: black;
+  }
+
+.active {
+    background-color: #04aa6d;
+  }
 
 p{
     text-align: center;
