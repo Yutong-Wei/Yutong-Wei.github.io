@@ -1,0 +1,26 @@
+
+
+body{
+    background-color: #b9b6e0;
+}
+
+
+h1{
+    text-align: center;
+    color: #34495e;
+}
+
+.topnav {
+  text-align: center;
+  background-color: #34495e;
+  }
+
+.topnav a {
+    color: white;
+    padding: 30px;
+}
+
+p{
+    text-align: center;
+}
+
