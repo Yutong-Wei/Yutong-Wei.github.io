@@ -4,6 +4,41 @@
         <meta charset="UTF-8">
         <title>Yutong Wei_About</title>
         <link rel="stylesheet" href="../Yutong.css"/>
+
+        <style>
+            h1{
+                font-size: 48px;
+            }
+
+            .text-block {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                background-color: white;
+                width: 500px;
+                height: 400px;
+                border-radius: 10px;
+                padding: 20px 10px 20px 10px;
+                margin-right: 150px;
+                margin-left: 250px;
+                margin-top: 50px;
+            }
+
+            p{
+                font-size: 20px;
+                line-height: 1.5;
+            }
+
+            .image-block img {
+                width: 400px;
+                border-radius: 500px;
+            }
+           
+
+            .content {
+                display: flex;
+            }
+        </style>
     </head>
 
     <body>
@@ -11,12 +46,21 @@
             <div class="topnav">
                     <a href="../index.html">Home</a>
                     <a href="../Projects/Projects.html">Projects</a>
-                    <a href="./About.html">About</a>
+                    <a href="./About.html" class="active">About</a>
                     <a href="../Contacts/Contacts.html">Contacts</a>
             </div>
          </nav>
         <h1>Yutong Wei</h1>
-        <p>Hi, I'm Yutong! I'm a multidisciplinary designer and artist!</p> 
+        
+        <div class="content">
+            <div class="text-block">
+                <p>Hi, I'm Yutong! I'm a multidisciplinary designer and artist based in New York!</p> 
+            </div>
+
+            <div class="image-block">
+                <img src="./YutongIMG.jpg">
+            </div>
+        </div>
 
     </body>
 </html>
