@@ -4,12 +4,76 @@
         <title>Yutong Wei_About</title>
         <link rel="stylesheet" href="../Yutong.css"/>
         <style>
-            
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: center;
+                margin-top: 80px;
+                
+                align-items: stretch; 
+                /* background-color:aqua; */
+            }
+
+
+            .column{
+                display: flex;
+                flex: 40%;
+                max-width: 40%;
+                margin: 30px 40px 30px 40px;
+                font-size: 18px;
+                font-family: "EB Garamond", serif;
+                color: #1f1f3f;
+                position: relative;
+                flex-direction: column;
+                /* justify-content: space-between; */
+                padding: 0px 30px 0px 30px;
+                line-height: 1.5;
+            }
+
+
+            .SelfIntro{
+                display:flex;
+                align-items: flex-start;
+                margin-top: 20px;
+            }
+
+            .button{
+                display: flex;
+                text-decoration: none;
+                font-family: "Roboto Mono", monospace;
+                font-size: 14px;
+            }
+
+            .ButtonText{
+                border-radius: 15px;
+                border: 3px solid #4a4e69;
+                padding: 5px;
+                color: #4a4e69;
+                margin-top: 150px;
+                margin-bottom: 20px;
+            }
+
+            .ButtonText:hover{
+                background-color: rgb(74, 78, 105);
+                color: white;
+            }
+
+
+
+            @media (max-width: 800px) {
+            .column {
+                flex: 80%;
+                max-width: 80%;
+                }
+            }
+
         </style>
     </head>
 
     <body>
         <nav>
+            <div class="content">
             <div class="topnav">
                 <div class="name">
                     <a href="../index.html">Yutong Wei</a>
@@ -20,6 +84,33 @@
                     <a href="./About.html" class="active">About</a>
             </div>
          </nav>
+
+         <div class="row">
+            <div class="column">
+                 <img src="./Yutong.JPG" style="width: 100%"/>
+            </div>
+    
+            <div class="column">
+                 
+                    <div class="SelfIntro">
+                        Hi! I’m Yutong Wei, a multidisciplinary designer and artist based in New York. I'm currently a third-year undergraduate student at NYU, majoring in Studio Art and minoring in Art History and Integrated Design and Media. This website is a work of mine, showcasing my selected artworks and design.
+                    </div>
+                   
+                    <a class="button" href="https://drive.google.com/file/d/1CThViwBGSGklobKgxBkJWCDQCSD0rb10/view?usp=sharing" target="_blank">
+                        <div class="ButtonText">
+                        Downloadable Resume
+                    </div>
+                    </a>
+                     <span><b>Contact: &nbsp;</b>yw6975@nyu.edu</span>
+                   
+                    
+                       
+            </div>            
+        </div>
+        
+        
+
+
 
     </body>
 </html>

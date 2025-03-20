@@ -3,13 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../../Yutong.css"/>
-        <title>Yutong Wei_Fine Arts</title>
+        <title>Yutong Wei_Fine Arts_Painting</title>
 
         <style>
             .row{
                 display: flex;
                 flex-wrap: wrap;
-                align-items: center;
                 justify-content: center;
                 margin-top: 20px;                
             }
@@ -17,14 +16,33 @@
             .column{
                 flex: 25%;
                 max-width: 25%;
-                padding: 20px 10px 20px 10px;
+                padding: 24px 12px 24px 12px;
                 position: relative;
             }
 
             .column img{
-                margin-top: 20px;
-                vertical-align: center;
+                margin-top: 30px;
             }
+
+            .column img:hover {
+                transform: scale(1.3);
+                transition: transform 0.4s ease;
+                z-index: 10;
+                position: relative;
+            }
+
+            .back{
+                text-decoration: none;
+                position: absolute;
+                font-size: 56px;
+                margin-left: 80px;
+                color: #8b8f9e;
+            }
+
+            .back:hover{
+                color:#1f1f3f;
+            }
+
 
             @media (max-width: 800px) {
             .column {
@@ -49,19 +67,32 @@
             </div>
          </nav>
 
+         <a href="../FineArts.html" class="back">&#8592</a>
+
          <div class="row">
             <div class="column">
-                <img src="./View from the Windows.jpg" style="width: 100%"/>
-                <img src="./Untitled1.jpg" style="width: 100%"/>
+                <a href="./ViewFromTheWindow.html">
+                    <img src="./View from the Windows.jpg" style="width: 100%"/></a>
+                <a href="./Untitled.html">
+                    <img src="./Untitled.png" style="width: 100%"/></a>
             </div>
 
             <div  class="column">
-                <img src="./MyBedroom.jpg" style="width: 100%"/>
-                <img src="./Untitled2.jpg" style="width: 100%"/>
+                <a href="./MyBedroom.html">
+                    <img src="./MyBedroom.jpg" style="width: 100%"/></a>
+                <a href="./ABrace.html">
+                    <img src="./A Brace Beside the Playground.JPG" style="width: 100%"/></a>
+                <a href="./ACorner.html">
+                    <img src="./ACorner.JPG" style="width: 100%"/></a>
             </div>
 
             <div  class="column">
-                <img src="./Beach.jpg" style="width: 100%"/>
+                <a href="./Beach.html">
+                    <img src="./Beach.jpg" style="width: 100%"/></a>
+                <a href="./Growth.html">
+                    <img src="./Growth.JPG" style="width: 100%"/></a>
+                
+                
             </div>
         </div>
     </body>
