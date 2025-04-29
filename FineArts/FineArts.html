@@ -1,117 +1,125 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../Yutong.css"/>
-        <title>Yutong Wei_Fine Arts</title>
-        <style>
-            .row{
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                margin-top: 80px;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../Yutong.css" />
+    <title>Yutong Wei_Fine Arts</title>
+    <style>
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+      }
 
-            .row2{
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-            }
+      .row2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
 
-            .column{
-                flex: 25%;
-                max-width: 25%;
-                padding: 10px 10px 10px 10px;
-                position: relative;
-            }
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        height: 300px;
+        padding: 10px 20px 20px 20px;
+        position: relative;
+      }
 
+      .column img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
 
-            .text{
-                display: flex;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                font-weight: bold;
-                font-size: 42px;
-                width: calc(100% - 70px);
-                justify-content: center;
-                font-family: "EB Garamond", serif;
+      .text {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: bold;
+        font-size: 42px;
+        width: calc(100% - 70px);
+        justify-content: center;
+        font-family: "EB Garamond", serif;
+      }
 
-            }
+      .column:hover .text {
+        transform: translate(-50%, -50%) scale(1.5);
+        transform-origin: center;
+        transition: transform 0.3s ease;
+      }
 
-            .column:hover .text{
-                transform:  translate(-50%, -50%) scale(1.5);
-                transform-origin: center;
-                transition: transform 0.3s ease;
-            }
+      @media (max-width: 800px) {
+        .column {
+          flex: 80%;
+          max-width: 80%;
+        }
+      }
+    </style>
+  </head>
 
-
-            @media (max-width: 800px) {
-            .column {
-                flex: 80%;
-                max-width: 80%;
-                }
-            }
-            
-        </style>
-    </head>
-
-    <body>
-        <nav>
-            <div class="topnav">
-                <div class="name">
-                    <a href="../index.html">Yutong Wei</a>
-                </div>
-                <div class="navigation">
-                    <a href="./FineArts.html" class="active">Fine Arts</a>
-                    <a href="../Design/Design.html">Design</a>
-                    <a href="../About/About.html">About</a>
-                </div>
-            </div>
-         </nav>
-
-
-     <div class="row">
-        <div class="column">
-            <a href="../FineArts/Painting/Painting.html">
-                <img src="./Painting/View from the Windows.jpg" style="width: 100%"/>
-                <div class="text"> Painting </div></a>
+  <body>
+    <nav>
+      <div class="topnav">
+        <div class="name">
+          <a href="../index.html">Yutong Wei</a>
         </div>
-
-        <div class="column">
-            <a href="./Drawing/Drawing.html">
-               <img src="./Drawing/ABottle.jpg" style="width: 100%"/>
-               <div class="text"> Drawing </div></a>
+        <div class="navigation">
+          <a href="./FineArts.html" class="active">Fine Arts</a>
+          <a href="../Design/Design.html">Design</a>
+          <a href="../About/About.html">About</a>
         </div>
+      </div>
+    </nav>
 
-        <div class="column">
-            <a href="./Video/Video.html">
-            <img src="./Video/Shadow.png" style="width: 100%"/>
-            <div class="text"> Video </div></a>
-        </div>
+    <div class="row">
+      <div class="column">
+        <a href="../FineArts/Painting/Painting.html">
+          <img src="./Painting/View from the Windows.jpg" style="width: 100%" />
+          <div class="text">Painting</div></a
+        >
+      </div>
+
+      <div class="column">
+        <a href="./Drawing/Drawing.html">
+          <img src="./Drawing/ABottle.jpg" style="width: 100%" />
+          <div class="text">Drawing</div></a
+        >
+      </div>
+
+      <div class="column">
+        <a href="./Video/Video.html">
+          <img src="./Video/Shadow.png" style="width: 100%" />
+          <div class="text">Video</div></a
+        >
+      </div>
     </div>
 
     <div class="row2">
-        <div class="column">
-            <a href="./MixMedia/MixMedia.html">
-                <img src="./MixMedia/Mountain.jpg" style="width: 100%;"/>
-                <div class="text"> Mix Media </div></a>
-        </div>
-        <div class="column">
-           <a href="./DigitalArt/DigitalArt.html">
-            <img src="./DigitalArt/Home18.png" style="width: 100%;"/>
-            <div class="text"> Digital Art </div></a>
-        </div>
-        <div class="column">
-            <img src="./SpinalSerie/Like a Spine No.2.JPG" style="width: 100%;"/>
-            <div class="text"> "Spinal Serie" </div>
-        </div>
-        
+      <div class="column">
+        <a href="./MixMedia/MixMedia.html">
+          <img src="./MixMedia/Mountain.jpg" style="width: 100%" />
+          <div class="text">Mix Media</div></a
+        >
+      </div>
+      <div class="column">
+        <a href="./DigitalArt/DigitalArt.html">
+          <img src="./DigitalArt/Home18.png" style="width: 100%" />
+          <div class="text">Digital Art</div></a
+        >
+      </div>
+      <div class="column">
+        <a href="./SpinalSerie/spinalSerie.html">
+          <img src="./SpinalSerie/Like a Spine No.2.JPG" style="width: 100%" />
+          <div class="text">"Spinal Serie"</div></a
+        >
+      </div>
     </div>
-     
-    </body>
+  </body>
 </html>

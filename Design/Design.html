@@ -1,28 +1,138 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Yutong Wei_About</title>
-        <link rel="stylesheet" href="../Yutong.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../Yutong.css" />
+    <title>Yutong Wei_Design</title>
+    <style>
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+      }
 
-        <style>
-          
-        </style>
-    </head>
+      .row2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
 
-    <body>
-        <nav>
-            <div class="topnav">
-                <div class="name">
-                    <a href="../index.html">Yutong Wei</a>
-                </div>
-                <div class="navigation">
-                    <a href="../FineArts/FineArts.html">Fine Arts</a>
-                    <a href="./Design.html" class="active">Design</a>
-                    <a href="../About/About.html">About</a>
+      .column {
+        flex: 35%;
+        max-width: 35%;
+        padding: 10px 30px 10px 30px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .text {
+        display: flex;
+        opacity: 0 ;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: bold;
+        font-size: 42px;
+        width: calc(100% - 70px);
+        justify-content: center;
+        font-family: "EB Garamond", serif;
+      }
+
+      .column:hover .text {
+        opacity: 1 ;
+        transition: opacity 0.3s ease-in-out;
+    }
+      
+      .column img{
+        border-radius: 10px;
+    }
+    
+    .column img:hover{
+        
+    }
+
+    /* .overlay {
+      position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: 10px 30px 10px 30px;
+    width: 100%;
+     height: 100%;
+     background-color: gray;
+     opacity: 0;
+     border-radius: 10px;
+     
+    } */
+
+    /* .column:hover .overlay {
+    opacity: 0.5; 
+    transition: opacity 0.3s ease-in-out;
+    } */
+
+
+    .column img:hover .overlay {
+    opacity: 0.5; 
+    transition: opacity 0.3s ease-in-out;
+    }
+
+      @media (max-width: 800px) {
+        .column {
+          flex: 80%;
+          max-width: 80%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+        <div class="topnav">
+            <div class="name">
+                <a href="../index.html">Yutong Wei</a>
             </div>
-         </nav>
-       
+            <div class="navigation">
+                <a href="../FineArts/FineArts.html">Fine Arts</a>
+                <a href="./Design.html" class="active">Design</a>
+                <a href="../About/About.html">About</a>
+        </div>
+    </div>
+     </nav>
 
-    </body>
+    <div class="row">
+      <div class="column">
+        <a href="./Chemical Lab/chemicalLab.html">
+          <img src="./Chemical Lab/chemicalLab.png" style="width: 100%" />
+          <div class="overlay"></div>
+          <div class="text">Project for Chemical Lab</div></a>
+      </div>
+
+      <div class="column">
+        <a href="./Drawing/Drawing.html">
+            <img src="./Chemical Lab/chemicalLab.png" style="width: 100%" />
+          <div class="text">Drawing</div></a>
+      </div>
+    </div>
+
+    <div class="row2">
+      <div class="column">
+        <a href="./MixMedia/MixMedia.html">
+          <img src="./Chemical Lab/chemicalLab.png" style="width: 100%" />
+          <div class="text">Mix Media</div></a>
+      </div>
+      <div class="column">
+        <a href="./DigitalArt/DigitalArt.html">
+          <img src="./Chemical Lab/chemicalLab.png" style="width: 100%" />
+          <div class="text">Digital Art</div></a>
+      </div>
+    
+      </div>
+    </div>
+  </body>
 </html>
