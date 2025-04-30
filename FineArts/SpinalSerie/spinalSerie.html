@@ -1,98 +1,115 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../../Yutong.css"/>
-        <title>Yutong Wei_Fine Arts_Spinal Serie</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../Yutong.css" />
+    <title>Yutong Wei_Fine Arts_Spinal Serie</title>
 
-        <style>
-            .row{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin-top: 20px;                
-            }
+    <style>
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+      }
 
-            .column{
-                flex: 25%;
-                max-width: 25%;
-                padding: 24px 12px 24px 12px;
-                position: relative;
-            }
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 24px 12px 24px 12px;
+        position: relative;
+      }
 
-            .column img{
-                margin-top: 30px;
-            }
+      .column img {
+        margin-top: 30px;
+      }
 
-            .column img:hover {
-                transform: scale(1.3);
-                transition: transform 0.4s ease;
-                z-index: 10;
-                position: relative;
-            }
+      .column img:hover {
+        transform: scale(1.3);
+        transition: transform 0.4s ease;
+        z-index: 10;
+        position: relative;
+      }
 
-            .back{
-                text-decoration: none;
-                position: absolute;
-                font-size: 56px;
-                margin-left: 80px;
-                color: #8b8f9e;
-            }
+      .breadcrumb {
+        font-family: "Roboto Mono", monospace;
+        position: absolute;
+        font-size: 18px;
 
-            .back:hover{
-                color:#1f1f3f;
-            }
+        margin: 10px 0px 20px 60px;
+        color: #8b8f9e;
+      }
+      .breadcrumb a {
+        text-decoration: none;
+        color: #4a4e69;
+      }
+      .breadcrumb a:hover {
+        border-bottom: solid 2px #1f1f3f;
+      }
+      .breadcrumb span {
+        color: #1f1f3f;
+        font-weight: bold;
+      }
 
+      .breadcrumb span:hover {
+        font-weight: bold;
+      }
 
-            @media (max-width: 800px) {
-            .column {
-                flex: 80%;
-                max-width: 80%;
-                }
-            }
-        </style>
-    </head>
+      @media (max-width: 800px) {
+        .column {
+          flex: 80%;
+          max-width: 80%;
+        }
+      }
+    </style>
+  </head>
 
-    <body>
-        <nav>
-            <div class="topnav">
-                <div class="name">
-                    <a href="../../index.html">Yutong Wei</a>
-                </div>
-                <div class="navigation">
-                    <a href="../FineArts.html" class="active">Fine Arts</a>
-                    <a href="../../Design/Design.html">Design</a>
-                    <a href="../../About/About.html">About</a>
-                </div>
-            </div>
-         </nav>
-
-         <a href="../FineArts.html" class="back">&#8592</a>
-
-         <div class="row">
-            <div class="column">
-                <a href="./likeASpineNo1.html">
-                    <img src="./Like a Spine No.1.JPG" style="width: 100%"/></a>
-                <a href="./holyBone.html">
-                        <img src="./Holy Bone2.jpg" style="width: 100%"/></a>
-                
-            </div>
-
-            <div  class="column">
-                <a href="./likeASpineNo2.html">
-                    <img src="./Like a Spine No.2.JPG" style="width: 100%"/></a>
-                <a href="./newForm.html">
-                    <img src="./New Form2.jpg" style="width: 100%"/></a>
-            </div>
-
-            <div  class="column">
-                <a href="./confined.html">
-                    <img src="./Confined.JPG" style="width: 100%"/></a>
-                <a href="./landscapeOf.html">
-                        <img src="./Landscape of the Spine1.JPG" style="width: 100%"/></a>
-                
-                
-            </div>
+  <body>
+    <nav>
+      <div class="topnav">
+        <div class="name">
+          <a href="../../index.html">Yutong Wei</a>
         </div>
-    </body>
+        <div class="navigation">
+          <a href="../FineArts.html" class="active">Fine Arts</a>
+          <a href="../../Design/Design.html">Design</a>
+          <a href="../../About/About.html">About</a>
+        </div>
+      </div>
+    </nav>
 
+    <div class="breadcrumb">
+      <a href="../FineArts.html">Fine Arts</a>
+      <span>&gt; "Spinal Serie"</span>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <a href="./likeASpineNo1.html">
+          <img src="./Like a Spine No.1.JPG" style="width: 100%"
+        /></a>
+        <a href="./holyBone.html">
+          <img src="./Holy Bone2.jpg" style="width: 100%"
+        /></a>
+      </div>
+
+      <div class="column">
+        <a href="./likeASpineNo2.html">
+          <img src="./Like a Spine No.2.JPG" style="width: 100%"
+        /></a>
+        <a href="./newForm.html">
+          <img src="./New Form2.jpg" style="width: 100%"
+        /></a>
+      </div>
+
+      <div class="column">
+        <a href="./confined.html">
+          <img src="./Confined.JPG" style="width: 100%"
+        /></a>
+        <a href="./landscapeOf.html">
+          <img src="./Landscape of the Spine1.JPG" style="width: 100%"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>

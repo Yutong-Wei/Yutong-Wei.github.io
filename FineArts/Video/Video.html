@@ -1,103 +1,110 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../../Yutong.css"/>
-        <title>Yutong Wei_Video</title>
-        <style>
-            .row{
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                margin-top: 80px;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../Yutong.css" />
+    <title>Yutong Wei_Video</title>
+    <style>
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+      }
 
-           
+      .column {
+        flex: 30%;
+        max-width: 30%;
+        padding: 10px 50px 10px 50px;
+        position: relative;
+      }
 
-            .column{
-                flex: 30%;
-                max-width: 30%;
-                padding: 10px 50px 10px 50px;
-                position: relative;
-            }
+      .text {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        opacity: 0;
+        font-weight: bold;
+        font-size: 50px;
+        width: calc(100% - 70px);
+        justify-content: center;
+        font-family: "EB Garamond", serif;
+      }
 
+      .column:hover .text {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
 
-            .text{
-                display: flex;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                opacity: 0;
-                font-weight: bold;
-                font-size: 50px;
-                width: calc(100% - 70px);
-                justify-content: center;
-                font-family: "EB Garamond", serif;
-            }
+      .breadcrumb {
+        font-family: "Roboto Mono", monospace;
+        position: absolute;
+        font-size: 18px;
 
-            .column:hover .text{
-                opacity: 1;
-                transition: opacity 0.3s ease;
-            }
+        margin: 10px 0px 20px 60px;
+        color: #8b8f9e;
+      }
+      .breadcrumb a {
+        text-decoration: none;
+        color: #4a4e69;
+      }
+      .breadcrumb a:hover {
+        border-bottom: solid 2px #1f1f3f;
+      }
+      .breadcrumb span {
+        color: #1f1f3f;
+        font-weight: bold;
+      }
 
-            .back{
-                text-decoration: none;
-                position: absolute;
-                font-size: 56px;
-                margin-left: 80px;
-                color: #8b8f9e;
-            }
+      .breadcrumb span:hover {
+        font-weight: bold;
+      }
+      @media (max-width: 800px) {
+        .column {
+          flex: 80%;
+          max-width: 80%;
+        }
+      }
+    </style>
+  </head>
 
-            .back:hover{
-                color:#1f1f3f;
-            }
-
-            @media (max-width: 800px) {
-            .column {
-                flex: 80%;
-                max-width: 80%;
-                }
-            }
-            
-        </style>
-    </head>
-
-    <body>
-        <nav>
-            <div class="topnav">
-                <div class="name">
-                    <a href="../index.html">Yutong Wei</a>
-                </div>
-                <div class="navigation">
-                    <a href="../FineArts.html" class="active">Fine Arts</a>
-                    <a href="../../Design/Design.html">Design</a>
-                    <a href="../../About/About.html">About</a>
-                </div>
-            </div>
-         </nav>
-
-         <a href="../FineArts.html" class="back">&#8592</a>
-
-     <div class="row">
-        <div class="column">
-            <a href="./Shadow.html">
-                <img src="./Shadow.png" style="width: 100%"/>
-                <div class="text"> Shadow </div></a>
+  <body>
+    <nav>
+      <div class="topnav">
+        <div class="name">
+          <a href="../index.html">Yutong Wei</a>
         </div>
-
-        <div class="column">
-            <a href="./DancingontheSpine.html">
-                <img src="./Dancing_4.jpg" style="width: 100%"/>
-                <div class="text"> Dancing on the Spine </div></a>
+        <div class="navigation">
+          <a href="../FineArts.html" class="active">Fine Arts</a>
+          <a href="../../Design/Design.html">Design</a>
+          <a href="../../About/About.html">About</a>
         </div>
+      </div>
+    </nav>
+
+    <div class="breadcrumb">
+      <a href="../FineArts.html">Fine Arts</a>
+      <span>&gt; Video</span>
     </div>
 
-   
+    <div class="row">
+      <div class="column">
+        <a href="./Shadow.html">
+          <img src="./Shadow.png" style="width: 100%" />
+          <div class="text">Shadow</div></a
+        >
+      </div>
 
- 
-     
-    </body>
+      <div class="column">
+        <a href="./DancingontheSpine.html">
+          <img src="./Dancing_4.jpg" style="width: 100%" />
+          <div class="text">Dancing on the Spine</div></a
+        >
+      </div>
+    </div>
+  </body>
 </html>

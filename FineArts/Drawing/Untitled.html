@@ -1,78 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../../Yutong.css"/>
-        <title>Yutong Wei_Fine Arts_Drawing_Untitled</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../Yutong.css" />
+    <title>Yutong Wei_Fine Arts_Drawing_Untitled</title>
 
-        <style>
-            .back{
-                text-decoration: none;
-                position: absolute;
-                font-size: 56px;
-                margin-left: 80px;
-                color: #8b8f9e;
-            }
+    <style>
+      .breadcrumb {
+        font-family: "Roboto Mono", monospace;
+        position: absolute;
+        font-size: 18px;
 
-            .back:hover{
-                color:#1f1f3f;
-            }
+        margin: 10px 0px 20px 60px;
+        color: #8b8f9e;
+      }
+      .breadcrumb a {
+        text-decoration: none;
+        color: #4a4e69;
+      }
+      .breadcrumb a:hover {
+        border-bottom: solid 2px #1f1f3f;
+      }
+      .breadcrumb span {
+        color: #1f1f3f;
+        font-weight: bold;
+      }
 
-            .column{
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                margin-top: 60px;
-            }
+      .breadcrumb span:hover {
+        font-weight: bold;
+      }
 
-            .work{
-                display: flex;
-                justify-content: center;
-            }
+      .back {
+        text-decoration: none;
+        position: absolute;
+        font-size: 56px;
+        margin-left: 80px;
+        color: #8b8f9e;
+      }
 
-            .desc {
-                font-size: 18px;
-                font-family: "Roboto Mono", monospace;
-                color: #1f1f3f;
-                display: flex; 
-                flex-direction: column; 
-                text-align: end; 
-                margin: 30px 25% 30px 0px;
-            }
+      .back:hover {
+        color: #1f1f3f;
+      }
 
-        </style>
-    </head>
+      .column {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 60px;
+      }
 
+      .work {
+        display: flex;
+        justify-content: center;
+      }
 
-    <body>
-        <nav>
-            <div class="topnav">
-                <div class="name">
-                    <a href="../../index.html">Yutong Wei</a>
-                </div>
-                <div class="navigation">
-                    <a href="../FineArts.html" class="active">Fine Arts</a>
-                    <a href="../../Design/Design.html">Design</a>
-                    <a href="../../About/About.html">About</a>
-                </div>
-            </div>
-         </nav>
+      .desc {
+        font-size: 18px;
+        font-family: "Roboto Mono", monospace;
+        color: #1f1f3f;
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        margin: 30px 25% 30px 0px;
+      }
+    </style>
+  </head>
 
-         <a href="./Drawing.html" class="back">&#8592</a>
-
-         
-         <div class="column">
-            <div class="work">
-            <img src="./Untitled.jpg" style="width: 50%"/>
-            </div>
-
-            <div class="desc">
-                <b><i>Untitled</i></b>
-                <br>2023
-                <br>Charcoal on Paper
-                <br>Dimensions Variable
-            </div>
+  <body>
+    <nav>
+      <div class="topnav">
+        <div class="name">
+          <a href="../../index.html">Yutong Wei</a>
         </div>
+        <div class="navigation">
+          <a href="../FineArts.html" class="active">Fine Arts</a>
+          <a href="../../Design/Design.html">Design</a>
+          <a href="../../About/About.html">About</a>
+        </div>
+      </div>
+    </nav>
 
-        
-    </body>
+    <div class="breadcrumb">
+      <a href="../FineArts.html">Fine Arts </a>
+      <span>&gt;</span> <a href="./Drawing.html">Drawing</a>
+      <span>&gt; ...</span>
+    </div>
+
+    <div class="column">
+      <div class="work">
+        <img src="./Untitled.jpg" style="width: 50%" />
+      </div>
+
+      <div class="desc">
+        <b><i>Untitled</i></b>
+        <br />2023 <br />Charcoal on Paper <br />Dimensions Variable
+      </div>
+    </div>
+  </body>
+</html>

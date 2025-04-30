@@ -1,83 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../../Yutong.css"/>
-        <title>Yutong Wei_Fine Arts_Spinal Serie_Holy Bone</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../Yutong.css" />
+    <title>Yutong Wei_Fine Arts_Spinal Serie_Holy Bone</title>
 
-        <style>
-            .back{
-                text-decoration: none;
-                position: absolute;
-                font-size: 56px;
-                margin-left: 80px;
-                color: #8b8f9e;
-                
-            }
+    <style>
+      .breadcrumb {
+        font-family: "Roboto Mono", monospace;
+        position: absolute;
+        font-size: 18px;
 
-            .back:hover{
-                color:#1f1f3f;
-            }
+        margin: 10px 0px 20px 60px;
+        color: #8b8f9e;
+      }
+      .breadcrumb a {
+        text-decoration: none;
+        color: #4a4e69;
+      }
+      .breadcrumb a:hover {
+        border-bottom: solid 2px #1f1f3f;
+      }
+      .breadcrumb span {
+        color: #1f1f3f;
+        font-weight: bold;
+      }
 
-            
-            .column{
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                margin-top: 60px;
-            }
+      .breadcrumb span:hover {
+        font-weight: bold;
+      }
 
-            .work{
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                align-items: center;
-            }
+      .column {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 60px;
+      }
 
-            .desc {
-                font-size: 18px;
-                font-family: "Roboto Mono", monospace;
-                color: #1f1f3f;
-                display: flex; 
-                flex-direction: column; 
-                text-align: end; 
-                margin: 30px 25% 30px 0px;
-            }
+      .work {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
 
-        </style>
-    </head>
+      .desc {
+        font-size: 18px;
+        font-family: "Roboto Mono", monospace;
+        color: #1f1f3f;
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        margin: 30px 25% 30px 0px;
+      }
+    </style>
+  </head>
 
-
-    <body>
-        <nav>
-            <div class="topnav">
-                <div class="name">
-                    <a href="../../index.html">Yutong Wei</a>
-                </div>
-                <div class="navigation">
-                    <a href="../FineArts.html" class="active">Fine Arts</a>
-                    <a href="../../Design/Design.html">Design</a>
-                    <a href="../../About/About.html">About</a>
-                </div>
-            </div>
-         </nav>
-
-         <a href="./spinalSerie.html" class="back">&#8592</a>
-
-         
-         <div class="column">
-            <div class="work">
-            <img src="./Holy Bone1.jpg" style="width: 50%"/>
-            <img src="./Holy Bone2.jpg" style="width: 50%"/>
-            </div>
-
-            <div class="desc">
-                <b><i>Holy Bone</i></b>
-                <br>2021
-                <br>PLA, LED light balls
-                <br>3 x 15 x 5 inch (H x W x D)
-            </div>
+  <body>
+    <nav>
+      <div class="topnav">
+        <div class="name">
+          <a href="../../index.html">Yutong Wei</a>
         </div>
+        <div class="navigation">
+          <a href="../FineArts.html" class="active">Fine Arts</a>
+          <a href="../../Design/Design.html">Design</a>
+          <a href="../../About/About.html">About</a>
+        </div>
+      </div>
+    </nav>
 
-        
-    </body>
+    <div class="breadcrumb">
+      <a href="../FineArts.html">Fine Arts </a>
+      <span>&gt;</span> <a href="./spinalSerie.html">"Spinal Serie"</a>
+      <span>&gt; ...</span>
+    </div>
+
+    <div class="column">
+      <div class="work">
+        <img src="./Holy Bone1.jpg" style="width: 50%" />
+        <img src="./Holy Bone2.jpg" style="width: 50%" />
+      </div>
+
+      <div class="desc">
+        <b><i>Holy Bone</i></b>
+        <br />2021 <br />PLA, LED light balls <br />3 x 15 x 5 inch (H x W x D)
+      </div>
+    </div>
+  </body>
+</html>

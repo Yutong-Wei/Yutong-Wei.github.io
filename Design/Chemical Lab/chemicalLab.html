@@ -6,16 +6,28 @@
     <title>Yutong Wei_Fine Arts_Spinal Serie_Chemical Lab Project</title>
 
     <style>
-      .back {
-        text-decoration: none;
+      .breadcrumb {
+        font-family: "Roboto Mono", monospace;
         position: absolute;
-        font-size: 56px;
-        margin-left: 60px;
+        font-size: 18px;
+
+        margin: 10px 0px 20px 60px;
         color: #8b8f9e;
       }
-
-      .back:hover {
+      .breadcrumb a {
+        text-decoration: none;
+        color: #4a4e69;
+      }
+      .breadcrumb a:hover {
+        border-bottom: solid 2px #1f1f3f;
+      }
+      .breadcrumb span {
         color: #1f1f3f;
+        font-weight: bold;
+      }
+
+      .breadcrumb span:hover {
+        font-weight: bold;
       }
 
       .row {
@@ -70,7 +82,10 @@
     </nav>
 
 
-    <a href="../Design.html" class="back">&#8592</a>
+    <div class="breadcrumb">
+      <a href="../Design.html">Design</a>
+      <span>&gt; ...</span>
+    </div>
 
     <div class="header">
       <h1>Chemical Lab Project</h1>
